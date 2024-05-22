@@ -1,6 +1,6 @@
 # flutter_prectice3
 
-A new Flutter project.
+플러터의 여러 기술을 테스트 해보는 것이 목적
 
 ## Getting Started
 
