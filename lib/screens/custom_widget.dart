@@ -1,23 +1,28 @@
 import 'package:flutter/material.dart';
 
-Widget Circle_Profile(){
+Widget Circle_Profile(context){
   return Row(
     children: [
       Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            width: 60,
-            height: 60,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: AssetImage('images/bom.jpg'),
-                fit: BoxFit.fill,
-              ),
-              border: Border.all(
-                color: Colors.black,
-                width: 2,
+          GestureDetector(
+            onTap: (){
+              Navigator.pushNamed(context, '/input');
+            },
+            child: Container(
+              width: 60,
+              height: 60,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage('images/bom.jpg'),
+                  fit: BoxFit.fill,
+                ),
+                border: Border.all(
+                  color: Colors.black,
+                  width: 2,
+                ),
               ),
             ),
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_prectice3/screens/Insta.dart';
+import 'package:flutter_prectice3/screens/input.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,14 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
-      home: Insta(),
+      home: MaterialApp(
+        title:'Insta',
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const Insta(),
+          '/input' : (context) => const Input(),
+        },
+      ),
     );
   }
 }

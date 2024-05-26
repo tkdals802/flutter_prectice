@@ -76,7 +76,7 @@ class _InstaState extends State<Insta> {
                   ),
                 ],
               ),
-            ),
+            ),//상단 아이콘 라인
             Container(
               height: 80,
               padding: EdgeInsets.only(left: 10),
@@ -84,10 +84,10 @@ class _InstaState extends State<Insta> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   for(int i=0;i<20;i++)
-                    Circle_Profile(),
+                    Circle_Profile(context),
                 ],//스토리 row 스크롤
               ),
-            ),
+            ),//스토리 라인
             Divider(
               color: Colors.black12,
               thickness: 1,
@@ -257,7 +257,7 @@ class _InstaState extends State<Insta> {
                   Text("min_uk님 외 100000명이 좋아합니다")
                 ],
               ),
-            ),
+            ),//하단 좋아요 라인
           ],
         ),
       ),
