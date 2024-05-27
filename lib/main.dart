@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
         initialRoute: '/',
         routes: {
           '/': (context) => const Insta(),
-          '/input' : (context) => const Input(),
+          '/input' : (context) => const JsonParse(),
         },
       ),
     );
